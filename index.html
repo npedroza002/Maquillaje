@@ -171,7 +171,7 @@
               <h3>Blush</h3>
               <p class="price">$800 MXN</p>
               <p class="description">Muestra de diferentes tonos de blush</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Estrella')">Ver producto</button>
             </div>
           </article>
 
@@ -184,7 +184,7 @@
               <h3>Blush</h3>
               <p class="price">$750 MXN</p>
               <p class="description">Muestra de tonalidades de blush</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-BrilloÚnico')">Ver producto</button>
             </div>
           </article>
 
@@ -196,7 +196,7 @@
               <h3>Blush</h3>
               <p class="price">$1,000 MXN</p>
               <p class="description">Paquete de diferentes productos</p>
-              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+              <button type="button" class="btn card" onclick="openModal('modal-Ilimitado')">Ver producto</button>
             </div>
           </article>
 
@@ -331,7 +331,8 @@
             <li><i data-lucide="instagram"></i> <a href="https://www.instagram.com/nataliapdrzz?hvrq=YXQ3Z2VybnNua3B3&utm_source=qr" target="_blank" rel="noopener noreferrer">@nataliapdrzz</a></li>
             <li><i data-lucide="facebook"></i> <a href="https://www.facebook.com/profile.php?id=100092336809315" target="_blank" rel="noopener noreferrer">Natalia Pedroza</a></li>
             <li><i data-lucide="mail"></i> <a href="mailto:n.pedroza002@ebc.edu.mx">n.pedroza002@ebc.edu.mx</a></li>
-            <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 19:00</li>
+            <li><i data-lucide="map"></i> <a href="https://maps.app.goo.gl/dfqATaLY3H3FDJaQA">Polanco</a></li>
+            <li><i data-lucide="clock-3"></i> Lunes a sábado, 10:00 a 15:00</li>
           </ul>
         </aside>
       </div>
@@ -350,6 +351,71 @@
     <a href="#inicio">Volver arriba ↑</a>
   </footer>
 
+<!--MODAL PARA LOS PRODUCTOS O SERVICIOS, ETC-->
+<div id="modal-Estrella" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Estrella-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/producto4.jpeg" alt="Caja de regalo rosa con chocolates y listón.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Estrella')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Estrella-title">Caja de productos</h2>
+        <p class="price">$400 MXN</p>
+        <p>Una caja pensada para diseñar y crear momentos importantes: Blushes, colores acorde a tu compra y una presentación lista para cualquier unboxing.</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Tarjeta con agradecimiento</li>
+          <li>Selección de productonde maquillaje</li>
+          <li>Color de listón</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir mi blush su producto estrella. ¿Me ayudan mostrandome los tonos?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+<div id="modal-BrilloÚnico" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-BrilloÚnico-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/producto6.jpeg" alt="Produto Blushes.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-BrilloÚnico')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-BrilloÚnico-title">Caja de productos</h2>
+        <p class="price">$550 MXN</p>
+        <p>Blushes inimaginables para destacar tu belleza</p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Tarjeta de certificado de autenticidad</li>
+          <li>Selección de productonde maquillaje</li>
+          <li>Color de blush</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir el producto blush. ¿Me ayudan mostrandome los tonos?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-Ilimitado" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-Ilimitado-title">
+    <div class="modal-panel">
+      <div class="modal-image">
+        <img src="img/producto1.jpeg" alt="Paquete de diferentes productos.">
+        <button type="button" class="modal-close" aria-label="Cerrar producto" onclick="closeModal('modal-Ilimitado')"><i data-lucide="x"></i></button>
+      </div>
+      <div class="modal-body">
+        <h2 id="modal-Ilimitado-title">Paquete de diferentes productos</h2>
+        <p class="price">$1000 MXN</p>
+        <p>Un paquete diseñado para tener todo lo necesario para ser hermosa </p>
+        <h3>Personalízalo con:</h3>
+        <ul>
+          <li>Tarjeta de autenticidad</li>
+          <li>Selección de productonde maquillaje</li>
+          <li>Mix de productos</li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero pedir el paquete ilimitado. ¿Me ayudan a personalizarla?')">Pedir por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  
 
 <script src="js/script.js"></script>
 
